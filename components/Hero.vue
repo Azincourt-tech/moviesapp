@@ -1,6 +1,9 @@
 <template>
   <div class="hero">
-    <img src="~/assets/img/movieHero.jpg" alt="Imagem com balde de pipoca de cinema" />
+    <img
+      src="~/assets/img/movieHero.jpg"
+      alt="Balde de pipoca de cinema"
+    />
     <div class="text-container">
       <div class="text">
         <span class="mini-heading">Now Streaming</span>
