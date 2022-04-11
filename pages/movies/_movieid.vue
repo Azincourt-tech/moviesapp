@@ -42,7 +42,7 @@
         </div>
       </div>
     </div>
-    <trailer class="container video" />
+    <trailer />
   </div>
 </template>
 
@@ -135,12 +135,6 @@ export default {
         span {
           font-style: normal;
         }
-      }
-    }
-    .container {
-      .video {
-        width: 100%;
-        margin: 2rem auto;
       }
     }
   }

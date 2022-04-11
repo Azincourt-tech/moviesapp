@@ -47,15 +47,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.container{
+.container {
     display: flex;
-    justify-items: center;
     flex-direction: column;
     margin: 2rem auto;
-    .videos{
-      justify-content: center;
+    
+    .videos {
       align-items: center;
     }
-    
 }
 </style>
