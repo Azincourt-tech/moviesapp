@@ -138,10 +138,6 @@ export default {
       }
     }
     .container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
       .video {
         width: 100%;
         margin: 2rem auto;
