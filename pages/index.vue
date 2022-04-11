@@ -8,7 +8,7 @@
       <input
         v-model.lazy="searchInput"
         type="text"
-        placeholder="Search"
+        placeholder="Search or Movies"
         @keyup.enter="$fetch"
       />
       <button v-show="searchInput !== ''" class="button" @click="clearSearch">
