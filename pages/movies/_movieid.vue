@@ -1,54 +1,59 @@
 <template>
-  <loading v-if="$fetchState.pending" />
-  <div v-else class="container single-movie">
-    <NuxtLink class="button" :to="{ name: 'index' }">Back</NuxtLink>
-    <div class="movie-info">
-      <div class="movie-img">
-        <img
-          :src="`http://image.tmdb.org/t/p/w500/${movie.poster_path}`"
-          alt=""
-        />
-      </div>
-      <div class="movie-content">
-        <h1>Title: {{ movie.title }}</h1>
-        <p class="movie-fact tag-line">
-          <span>Tagline:</span>" {{ movie.tagline }} "
-        </p>
-        <p class="movie-fact">
-          <span>Released</span>
-          {{
-            new Date(movie.release_date).toLocaleString('en-us', {
-              month: 'long',
-              day: 'numeric',
-              year: 'numeric',
-            })
-          }}
-        </p>
-        <p class="movie-fact">
-          <span>Duration:</span> {{ movie.runtime }} minutes
-        </p>
-        <p class="movie-fact">
-          <span>Revenue:</span>
-          {{
-            movie.revenue.toLocaleString('en-us', {
-              style: 'currency',
-              currency: 'USD',
-            })
-          }}
-        </p>
-        <p class="movie-fact"><span>Overview:</span> {{ movie.overview }}</p>
+  <div>
+    <loading v-if="$fetchState.pending" />
+
+    <div v-else class="container single-movie">
+      <NuxtLink class="button" :to="{ name: 'index' }">Back</NuxtLink>
+      <div class="movie-info">
+        <div class="movie-img">
+          <img
+            :src="`http://image.tmdb.org/t/p/w500/${movie.poster_path}`"
+            alt=""
+          />
+        </div>
+        <div class="movie-content">
+          <h1>Title: {{ movie.title }}</h1>
+          <p class="movie-fact tag-line">
+            <span>Tagline:</span>" {{ movie.tagline }} "
+          </p>
+          <p class="movie-fact">
+            <span>Released</span>
+            {{
+              new Date(movie.release_date).toLocaleString('en-us', {
+                month: 'long',
+                day: 'numeric',
+                year: 'numeric',
+              })
+            }}
+          </p>
+          <p class="movie-fact">
+            <span>Duration:</span> {{ movie.runtime }} minutes
+          </p>
+          <p class="movie-fact">
+            <span>Revenue:</span>
+            {{
+              movie.revenue.toLocaleString('en-us', {
+                style: 'currency',
+                currency: 'USD',
+              })
+            }}
+          </p>
+          <p class="movie-fact"><span>Overview:</span> {{ movie.overview }}</p>
+        </div>
       </div>
     </div>
+    <trailer class="container video" />
   </div>
 </template>
 
 <script>
 import axios from 'axios'
 import Loading from '~/components/Loading.vue'
+import Trailer from '~/components/Trailer.vue'
 
 export default {
   name: 'SingleMovie',
-  components: { Loading },
+  components: { Loading, Trailer },
 
   data() {
     return {
@@ -58,6 +63,7 @@ export default {
 
   async fetch() {
     await this.getSingleMovie()
+    await this.getVideo()
   },
 
   head() {
@@ -129,6 +135,16 @@ export default {
         span {
           font-style: normal;
         }
+      }
+    }
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .video {
+        width: 100%;
+        margin: 2rem auto;
       }
     }
   }
