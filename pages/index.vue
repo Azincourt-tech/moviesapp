@@ -105,9 +105,10 @@ import axios from 'axios'
 import Hero from '~/components/Hero.vue'
 import Loading from '~/components/Loading.vue'
 
+
 export default {
   name: 'IndexPage',
-  components: { Hero, Loading },
+  components: { Hero, Loading,},
 
   data() {
     return {
