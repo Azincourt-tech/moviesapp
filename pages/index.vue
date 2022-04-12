@@ -9,6 +9,7 @@
         v-model.lazy="searchInput"
         type="text"
         placeholder="Search or Movies"
+        required
         @keyup.enter="$fetch"
       />
       <button v-show="searchInput !== ''" class="button" @click="clearSearch">
@@ -187,11 +188,11 @@ export default {
     display: flex;
     padding: 32px 16px;
     input {
-      max-width: 350px;
+      max-width: 390px;
       width: 100%;
       padding: 12px 6px;
       font-size: 14px;
-      border: none;
+      border-radius: 5px;
       &:focus {
         outline: none;
       }
@@ -278,5 +279,6 @@ export default {
       }
     }
   }
+  
 }
 </style>

@@ -2,7 +2,7 @@
     <div class="app">
     <Nuxt keep-alive />
     <Footer />
-    </div>
+    </div> 
 </template>
 
 
@@ -15,4 +15,5 @@ export default {
   
 }
 </script>
+
 
