@@ -49,16 +49,16 @@ export default {
 .container {
   display: flex;
   flex-direction: column;
-  margin: 2rem auto 0;
+  margin: 2rem auto 1rem;
 
   .videos {
     align-items: center;
 
     @media screen and (max-width: 500px) {
     .videos{
-      width: 50%;
+      width: 90%;
       height: 100px;
-      margin: 2rem auto;
+      margin: 2rem auto 3rem;
       }
     }
   }

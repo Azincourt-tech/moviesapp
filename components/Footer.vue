@@ -34,11 +34,7 @@ export default {
 
 <style lang="scss" scoped>
 footer {
-  background: linear-gradient(
-    0deg,
-    rgba(121, 6, 20, 1) 35%,
-    rgba(33, 31, 31, 1) 100%
-  );
+  background: linear-gradient(0deg, rgba(121,6,20,1) 17%, rgba(33,31,31,1) 100%);
   display: flex;
   @media (max-width: 320px) {
     display: flex;
@@ -148,6 +144,12 @@ footer {
         padding: 0.5rem 0 0 0;
         font-size: 24px;
         font-weight: bold;
+      }
+      @media (max-width: 320px) {
+        font-size: 14px;
+      }
+      @media (max-width: 750px) {
+        font-size: 14px;
       }
     }
   }
