@@ -36,7 +36,7 @@ export default {
 footer {
   background: linear-gradient(
     0deg,
-    rgba(121, 6, 20, 1) 0%,
+    rgba(121, 6, 20, 1) 35%,
     rgba(33, 31, 31, 1) 100%
   );
   display: flex;
@@ -62,7 +62,6 @@ footer {
     @media (max-width: 500px) {
       display: flex;
       width: 100%;
-
       padding: 0;
     }
     @media (max-width: 750px) {
@@ -147,7 +146,7 @@ footer {
       .copy {
         margin: 1rem;
         padding: 0.5rem 0 0 0;
-        font-size:24px;
+        font-size: 24px;
         font-weight: bold;
       }
     }
