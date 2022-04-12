@@ -42,7 +42,7 @@
         </div>
       </div>
     </div>
-    <trailer />
+    <trailer class="container videos" />
   </div>
 </template>
 
@@ -134,6 +134,17 @@ export default {
         font-style: italic;
         span {
           font-style: normal;
+        }
+      }
+
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .video {
+          width: 100%;
+          margin: 2rem auto;
         }
       }
     }
