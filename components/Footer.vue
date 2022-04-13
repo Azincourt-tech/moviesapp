@@ -34,13 +34,9 @@ export default {
 
 <style lang="scss" scoped>
 footer {
-  background: linear-gradient(
-    0deg,
-    rgba(121, 6, 20, 1) 17%,
-    rgba(33, 31, 31, 1) 100%
-  );
   display: flex;
-  width:100%;
+  max-width:100%;
+  width: 212vh;
 
 
   @media (max-width: 320px) {
@@ -121,7 +117,7 @@ footer {
     }
     .copyright {
       width: 500%;
-      color: rgb(196, 191, 191);
+      color: rgba(0, 0, 0, 1);
       display: inline-block;
       text-align: center;
 
