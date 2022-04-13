@@ -268,6 +268,9 @@ export default {
             color: #fff;
             font-size: 20px;
           }
+          .title:hover{
+            color: #ffab03;
+          }
           .release {
             margin-top: 8px;
             color: #c9c9c9;

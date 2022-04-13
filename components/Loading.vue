@@ -31,7 +31,7 @@ export default {
     height: 70px;
     border-radius: 50%;
     border: 2px solid transparent;
-    border-top-color: #fff;
+    border-top-color: rgb(184, 5, 5);
     animation: circle-loading 1200ms ease infinite;
   }
 }

@@ -16,6 +16,20 @@
           <p class="movie-fact tag-line">
             <span>Tagline:</span>" {{ movie.tagline }} "
           </p>
+          <div class="movie-fact">
+            <span>Production companies:</span>
+            <span v-for="(c, index) in movie.production_companies" :key="index" class="company">
+              {{ c.name }};
+            </span>
+          </div>
+
+          <div class="movie-fact">
+              <span >Genres:</span>
+              <span v-for="(g, index) in movie.genres" :key="index" class="company">
+                {{ g.name }};
+              </span>
+            </div>
+
           <p class="movie-fact">
             <span>Released</span>
             {{
@@ -29,6 +43,10 @@
           <p class="movie-fact">
             <span>Duration:</span> {{ movie.runtime }} minutes
           </p>
+          <div class="movie-fact">
+            <span>budget:</span>
+            {{ movie.budget.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',') }}$
+          </div>
           <p class="movie-fact">
             <span>Revenue:</span>
             {{
@@ -58,6 +76,7 @@ export default {
   data() {
     return {
       movie: '',
+      genres: [],
     }
   },
 
@@ -121,6 +140,9 @@ export default {
         font-size: 56px;
         font-weight: 400;
       }
+      h1:hover{
+        color: #ffab03;
+      }
       .movie-fact {
         margin-top: 12px;
         font-size: 20px;
@@ -128,7 +150,15 @@ export default {
         span {
           font-weight: 600;
           text-decoration: underline;
+          color: #ffab03;
         }
+
+        .company{
+          text-decoration: none;
+          color: #fff;
+
+        }
+         
       }
       .tagline {
         font-style: italic;
