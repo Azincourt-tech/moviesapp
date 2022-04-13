@@ -1,29 +1,33 @@
 <template>
-    <footer>
-      <div class="container">
-        <div class="copyright">
-          <p class="copy">&copy; Copyright Movie App - 2022</p>
-        </div>
-        <div class="card">
-          <a href="https://github.com/Azincourt-tech" icon>
-            <img
-              class="github"
-              height="46px"
-              src="~/assets/img/github.svg"
-              alt=""
-            />
-          </a>
-          <a href="https://t.me/waddles" class="icon-telegram" icon>
-            <img
-              class="telegram"
-              height="46px"
-              src="../assets/img/telegram.svg"
-              alt=""
-            />
-          </a>
-        </div>
+  <footer>
+    <div class="container">
+      <div class="copyright">
+        <p class="copy">&copy; Copyright Movie App - 2022</p>
       </div>
-    </footer>
+      <div class="card">
+        <a href="https://github.com/Azincourt-tech" icon>
+          <img
+            class="github"
+            height="46px"
+            src="~/assets/img/github.svg"
+            alt=""
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/willian-da-silva-almeida-075876222/"
+          class="icon-telegram"
+          icon
+        >
+          <img
+            class="telegram"
+            height="46px"
+            src="../assets/img/linkedin.svg"
+            alt=""
+          />
+        </a>
+      </div>
+    </div>
+  </footer>
 </template>
 
 <script>
@@ -35,9 +39,8 @@ export default {
 <style lang="scss" scoped>
 footer {
   display: flex;
-  max-width:100%;
+  max-width: 100%;
   width: 212vh;
-
 
   @media (max-width: 320px) {
     display: flex;
