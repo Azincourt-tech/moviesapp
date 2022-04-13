@@ -42,7 +42,7 @@ div {
     padding: 6rem 0 2rem 0;
     font-size: 70px;
     text-align: center;
-    background: -webkit-linear-gradient(#833ab4, #fd1d1d,#fcb045);
+    background: -webkit-linear-gradient(#833ab4, #fd1d1d, #fcb045);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -50,7 +50,7 @@ div {
   p {
     text-align: center;
     font-size: 30px;
-    background: -webkit-linear-gradient(#833ab4, #fd1d1d,#fcb045);
+    background: -webkit-linear-gradient(#833ab4, #fd1d1d, #fcb045);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
