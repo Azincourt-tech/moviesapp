@@ -7,7 +7,7 @@ describe('Trailer - Unit', () => {
     expect(wrapper.vm).toBeTruthy()
   })
 
-  test('Contem verificar se existe a classe videos - Unit', () => {
+  test('verificar se existe a classe videos - Unit', () => {
     const wrapper = mount(Trailer)
     expect(wrapper.classes('.videos'))
   })
@@ -18,7 +18,7 @@ describe('Trailer - Unit', () => {
     expect(src).toBe(src)
   })
 
-  test('verificando se existe caminho da imagem no src - Unit', () => {
+  test('verificando se existe caminho de embed no src - Unit', () => {
     const wrapper = mount(Trailer)
     const src = wrapper.find('src')
     src.exists(`https://www.youtube.com/embed/`)
