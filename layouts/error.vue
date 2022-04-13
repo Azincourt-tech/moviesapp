@@ -36,26 +36,27 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+div {
+  h1 {
+    padding: 6rem 0 2rem 0;
+    color: aliceblue;
+    font-size: 40px;
+    text-align: center;
+  }
 
-h1 {
-  padding: 6rem 0 2rem 0;
-  color: aliceblue;
-  font-size: 40px;
-  text-align: center;
-}
+  h1:hover {
+    color: rgba(252, 176, 69, 1);
+  }
 
-h1:hover{
-    color: rgba(252,176,69,1) ;
-}
+  p {
+    text-align: center;
+    color: aliceblue;
+    font-size: 30px;
+  }
 
-p {
-  text-align: center;
-  color: aliceblue;
-  font-size: 30px;
-}
-
-p:hover {
-  color: rgba(252,176,69,1) ;
+  p:hover {
+    color: rgba(252, 176, 69, 1);
+  }
 }
 </style>
