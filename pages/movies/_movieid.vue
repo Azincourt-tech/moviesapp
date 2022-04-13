@@ -93,8 +93,8 @@ export default {
   fetchDelay: 1000,
   methods: {
     async getSingleMovie() {
-      const data = axios.get(
-        `https://api.themoviedb.org/3/movie/${this.$route.params.movieid}?api_key=a866f83e29aa185916154312b86a8e1f&language=en-US`
+        const data = axios.get(
+          `https://api.themoviedb.org/3/movie/${this.$route.params.movieid}?api_key=a866f83e29aa185916154312b86a8e1f&language=en-US`
       )
       const result = await data
       this.movie = result.data
