@@ -6,4 +6,10 @@ describe('Loading - Unit', () => {
     const wrapper = mount(Loading)
     expect(wrapper.vm).toBeTruthy()
   })
+
+  test('verificar se existe a classe loading - Unit', () => {
+    const wrapper = mount(Loading)
+    expect(wrapper.classes('.loading'))
+    expect(wrapper.exists)
+  })
 })
