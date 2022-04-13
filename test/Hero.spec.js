@@ -10,12 +10,18 @@ describe('Hero - Unit', () => {
   test('Contem classe mini-heading - Unit', () => {
     const wrapper = mount(Hero)
     expect(wrapper.classes('.mini-heading'))
-
   })
 
-  test('Deve ter o height style "height: 400px;"', () => {
+  test('Contem src - Unit', () => {
+    const wrapper = mount(Hero)
+    const src = wrapper.find('src')
+    expect(src).toBeTruthy()
+  })
 
-    expect(Hero.attributes('.hero').style).toBe('height: 400px;');
-    expect(Hero.attributes().style).not.toBe('height: 410px;');
+  test('verificando se existe caminho da imagem no src - Unit', () => {
+    const wrapper = mount(Hero)
+    const src = wrapper.find('src')
+    src.exists("~/assets/img/movieHero.jpg")
+    expect(src.exists).toBeTruthy()
   })
 })
