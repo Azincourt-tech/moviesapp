@@ -40,19 +40,19 @@ export default {
 div {
   h1 {
     padding: 6rem 0 2rem 0;
-    color: aliceblue;
-    font-size: 40px;
+    font-size: 70px;
     text-align: center;
-  }
-
-  h1:hover {
-    color: rgba(252, 176, 69, 1);
+    background: -webkit-linear-gradient(#833ab4, #fd1d1d,#fcb045);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   p {
     text-align: center;
-    color: aliceblue;
     font-size: 30px;
+    background: -webkit-linear-gradient(#833ab4, #fd1d1d,#fcb045);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   p:hover {
