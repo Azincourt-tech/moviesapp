@@ -1,5 +1,27 @@
 # moviesapp
 
+# Search movies app with TMDB database
+
+http://nuxt-search-app.herokuapp.com/
+
+## Technology stack:
+* [Nuxt](https://nuxtjs.org) 
+* [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) 
+* [Sass](https://sass-lang.com/) 
+* [Jest](https://jestjs.io/pt-BR/) 
+* [Axios](https://axios.nuxtjs.org/) 
+* [TMDB database](https://developers.themoviedb.org/3/getting-started/introduction)
+
+## Images
+
+ 1.![2022-04-14_07h32_58](https://user-images.githubusercontent.com/79428059/163370951-a85a2778-1403-45ec-bb65-ff23802d5e6d.png)
+  
+ 2.![2022-04-14_07h35_42](https://user-images.githubusercontent.com/79428059/163371523-b4296217-fecd-4990-bee6-92aefc0c8054.png)
+ 
+ 3.![2022-04-14_07h38_16](https://user-images.githubusercontent.com/79428059/163371868-1b7f8e88-282b-4bd3-aa73-ff04a2535a87.png)
+
+ 4.![2022-04-14_07h39_25](https://user-images.githubusercontent.com/79428059/163372036-ef8d34c4-81bc-472f-93e4-d03e75bd6f75.png)
+
 ## Build Setup
 
 ```bash
