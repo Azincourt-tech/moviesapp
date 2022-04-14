@@ -2,7 +2,7 @@
 
 # Search movies app with TMDB database
 
-http://nuxt-search-app.herokuapp.com/
+https://azincourt-movie.herokuapp.com/
 
 ## Technology stack:
 * [Nuxt](https://nuxtjs.org) 
